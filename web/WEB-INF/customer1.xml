@@ -1,0 +1,242 @@
+<Customer>
+	<Task ref="0">
+		<arrivalTime>0</arrivalTime>
+		<deadline></deadline>
+		<Subtask ref="0">
+			<cloudletLength>1000</cloudletLength>
+			<pesNumber>1</pesNumber>
+			<cloudletFileSize>0</cloudletFileSize>
+			<cloudletOutputSize>0</cloudletOutputSize>
+			<utilizationModelCpu>UtilizationModelFull</utilizationModelCpu>
+			<utilizationModelRam>UtilizationModelFull</utilizationModelRam>
+			<utilizationModelBw>UtilizationModelFull</utilizationModelBw>
+			<record>true</record>
+			<fileList></fileList>
+		</Subtask>
+		<Subtask ref="1">
+			<cloudletLength>1000</cloudletLength>
+			<pesNumber>1</pesNumber>
+			<cloudletFileSize>0</cloudletFileSize>
+			<cloudletOutputSize>0</cloudletOutputSize>
+			<utilizationModelCpu>UtilizationModelFull</utilizationModelCpu>
+			<utilizationModelRam>UtilizationModelFull</utilizationModelRam>
+			<utilizationModelBw>UtilizationModelFull</utilizationModelBw>
+			<record>true</record>
+			<fileList></fileList>
+		</Subtask>
+		<Subtask ref="2">
+			<cloudletLength>1000</cloudletLength>
+			<pesNumber>1</pesNumber>
+			<cloudletFileSize>0</cloudletFileSize>
+			<cloudletOutputSize>0</cloudletOutputSize>
+			<utilizationModelCpu>UtilizationModelFull</utilizationModelCpu>
+			<utilizationModelRam>UtilizationModelFull</utilizationModelRam>
+			<utilizationModelBw>UtilizationModelFull</utilizationModelBw>
+			<record>true</record>
+			<fileList></fileList>
+		</Subtask>
+		<Subtask ref="3">
+			<cloudletLength>1000</cloudletLength>
+			<pesNumber>1</pesNumber>
+			<cloudletFileSize>0</cloudletFileSize>
+			<cloudletOutputSize>0</cloudletOutputSize>
+			<utilizationModelCpu>UtilizationModelFull</utilizationModelCpu>
+			<utilizationModelRam>UtilizationModelFull</utilizationModelRam>
+			<utilizationModelBw>UtilizationModelFull</utilizationModelBw>
+			<record>true</record>
+			<fileList></fileList>
+		</Subtask>
+		<Subtask ref="4">
+			<cloudletLength>1000</cloudletLength>
+			<pesNumber>1</pesNumber>
+			<cloudletFileSize>0</cloudletFileSize>
+			<cloudletOutputSize>0</cloudletOutputSize>
+			<utilizationModelCpu>UtilizationModelFull</utilizationModelCpu>
+			<utilizationModelRam>UtilizationModelFull</utilizationModelRam>
+			<utilizationModelBw>UtilizationModelFull</utilizationModelBw>
+			<record>true</record>
+			<fileList></fileList>
+		</Subtask>
+		<Subtask ref="5">
+			<cloudletLength>1000</cloudletLength>
+			<pesNumber>1</pesNumber>
+			<cloudletFileSize>0</cloudletFileSize>
+			<cloudletOutputSize>0</cloudletOutputSize>
+			<utilizationModelCpu>UtilizationModelFull</utilizationModelCpu>
+			<utilizationModelRam>UtilizationModelFull</utilizationModelRam>
+			<utilizationModelBw>UtilizationModelFull</utilizationModelBw>
+			<record>true</record>
+			<fileList></fileList>
+		</Subtask>
+		<Subtask ref="6">
+			<cloudletLength>1000</cloudletLength>
+			<pesNumber>1</pesNumber>
+			<cloudletFileSize>0</cloudletFileSize>
+			<cloudletOutputSize>0</cloudletOutputSize>
+			<utilizationModelCpu>UtilizationModelFull</utilizationModelCpu>
+			<utilizationModelRam>UtilizationModelFull</utilizationModelRam>
+			<utilizationModelBw>UtilizationModelFull</utilizationModelBw>
+			<record>true</record>
+			<fileList></fileList>
+		</Subtask>
+		<Subtask ref="7">
+			<cloudletLength>1000</cloudletLength>
+			<pesNumber>1</pesNumber>
+			<cloudletFileSize>0</cloudletFileSize>
+			<cloudletOutputSize>0</cloudletOutputSize>
+			<utilizationModelCpu>UtilizationModelFull</utilizationModelCpu>
+			<utilizationModelRam>UtilizationModelFull</utilizationModelRam>
+			<utilizationModelBw>UtilizationModelFull</utilizationModelBw>
+			<record>true</record>
+			<fileList></fileList>
+		</Subtask>
+		<Dependency src="0" dst="1"></Dependency>
+		<Dependency src="0" dst="2"></Dependency>
+		<Dependency src="1" dst="3"></Dependency>
+		<Dependency src="1" dst="4"></Dependency>
+		<Dependency src="1" dst="5"></Dependency>
+		<Dependency src="2" dst="6"></Dependency>
+		<Dependency src="3" dst="7"></Dependency>
+		<Dependency src="4" dst="7"></Dependency>
+		<Dependency src="5" dst="7"></Dependency>
+		<Dependency src="6" dst="7"></Dependency>
+	</Task>
+	<Task ref="1">
+		<arrivalTime>2</arrivalTime>
+		<deadline></deadline>
+		<Subtask ref="0">
+			<cloudletLength>1000</cloudletLength>
+			<pesNumber>1</pesNumber>
+			<cloudletFileSize>0</cloudletFileSize>
+			<cloudletOutputSize>0</cloudletOutputSize>
+			<utilizationModelCpu>UtilizationModelFull</utilizationModelCpu>
+			<utilizationModelRam>UtilizationModelFull</utilizationModelRam>
+			<utilizationModelBw>UtilizationModelFull</utilizationModelBw>
+			<record>true</record>
+			<fileList></fileList>
+		</Subtask>
+		<Subtask ref="1">
+			<cloudletLength>1000</cloudletLength>
+			<pesNumber>1</pesNumber>
+			<cloudletFileSize>0</cloudletFileSize>
+			<cloudletOutputSize>0</cloudletOutputSize>
+			<utilizationModelCpu>UtilizationModelFull</utilizationModelCpu>
+			<utilizationModelRam>UtilizationModelFull</utilizationModelRam>
+			<utilizationModelBw>UtilizationModelFull</utilizationModelBw>
+			<record>true</record>
+			<fileList></fileList>
+		</Subtask>
+		<Subtask ref="2">
+			<cloudletLength>1000</cloudletLength>
+			<pesNumber>1</pesNumber>
+			<cloudletFileSize>0</cloudletFileSize>
+			<cloudletOutputSize>0</cloudletOutputSize>
+			<utilizationModelCpu>UtilizationModelFull</utilizationModelCpu>
+			<utilizationModelRam>UtilizationModelFull</utilizationModelRam>
+			<utilizationModelBw>UtilizationModelFull</utilizationModelBw>
+			<record>true</record>
+			<fileList></fileList>
+		</Subtask>
+		<Subtask ref="3">
+			<cloudletLength>1000</cloudletLength>
+			<pesNumber>1</pesNumber>
+			<cloudletFileSize>0</cloudletFileSize>
+			<cloudletOutputSize>0</cloudletOutputSize>
+			<utilizationModelCpu>UtilizationModelFull</utilizationModelCpu>
+			<utilizationModelRam>UtilizationModelFull</utilizationModelRam>
+			<utilizationModelBw>UtilizationModelFull</utilizationModelBw>
+			<record>true</record>
+			<fileList></fileList>
+		</Subtask>
+		<Subtask ref="4">
+			<cloudletLength>1000</cloudletLength>
+			<pesNumber>1</pesNumber>
+			<cloudletFileSize>0</cloudletFileSize>
+			<cloudletOutputSize>0</cloudletOutputSize>
+			<utilizationModelCpu>UtilizationModelFull</utilizationModelCpu>
+			<utilizationModelRam>UtilizationModelFull</utilizationModelRam>
+			<utilizationModelBw>UtilizationModelFull</utilizationModelBw>
+			<record>true</record>
+			<fileList></fileList>
+		</Subtask>
+		<Subtask ref="5">
+			<cloudletLength>1000</cloudletLength>
+			<pesNumber>1</pesNumber>
+			<cloudletFileSize>0</cloudletFileSize>
+			<cloudletOutputSize>0</cloudletOutputSize>
+			<utilizationModelCpu>UtilizationModelFull</utilizationModelCpu>
+			<utilizationModelRam>UtilizationModelFull</utilizationModelRam>
+			<utilizationModelBw>UtilizationModelFull</utilizationModelBw>
+			<record>true</record>
+			<fileList></fileList>
+		</Subtask>
+		<Subtask ref="6">
+			<cloudletLength>1000</cloudletLength>
+			<pesNumber>1</pesNumber>
+			<cloudletFileSize>0</cloudletFileSize>
+			<cloudletOutputSize>0</cloudletOutputSize>
+			<utilizationModelCpu>UtilizationModelFull</utilizationModelCpu>
+			<utilizationModelRam>UtilizationModelFull</utilizationModelRam>
+			<utilizationModelBw>UtilizationModelFull</utilizationModelBw>
+			<record>true</record>
+			<fileList></fileList>
+		</Subtask>
+		<Subtask ref="7">
+			<cloudletLength>1000</cloudletLength>
+			<pesNumber>1</pesNumber>
+			<cloudletFileSize>0</cloudletFileSize>
+			<cloudletOutputSize>0</cloudletOutputSize>
+			<utilizationModelCpu>UtilizationModelFull</utilizationModelCpu>
+			<utilizationModelRam>UtilizationModelFull</utilizationModelRam>
+			<utilizationModelBw>UtilizationModelFull</utilizationModelBw>
+			<record>true</record>
+			<fileList></fileList>
+		</Subtask>
+		<Dependency src="0" dst="1"></Dependency>
+		<Dependency src="0" dst="2"></Dependency>
+		<Dependency src="1" dst="3"></Dependency>
+		<Dependency src="1" dst="4"></Dependency>
+		<Dependency src="1" dst="5"></Dependency>
+		<Dependency src="2" dst="6"></Dependency>
+		<Dependency src="3" dst="7"></Dependency>
+		<Dependency src="4" dst="7"></Dependency>
+		<Dependency src="5" dst="7"></Dependency>
+		<Dependency src="6" dst="7"></Dependency>
+	</Task>
+	<VM ref="0">
+		<size>10000</size>
+		<ram>512</ram>
+		<mips>1000</mips>
+		<bw>1000</bw>
+		<pesNumber>1</pesNumber>
+		<vmm>Xen</vmm>
+		<CloudletScheduler>SubTaskSchedulerCloudletLevel</CloudletScheduler>
+	</VM>
+	<VM ref="1">
+		<size>10000</size>
+		<ram>512</ram>
+		<mips>1000</mips>
+		<bw>1000</bw>
+		<pesNumber>1</pesNumber>
+		<vmm>Xen</vmm>
+		<CloudletScheduler>SubTaskSchedulerCloudletLevel</CloudletScheduler>
+	</VM>
+	<VM ref="2">
+		<size>10000</size>
+		<ram>512</ram>
+		<mips>1000</mips>
+		<bw>1000</bw>
+		<pesNumber>1</pesNumber>
+		<vmm>Xen</vmm>
+		<CloudletScheduler>SubTaskSchedulerCloudletLevel</CloudletScheduler>
+	</VM>
+	<VM ref="3">
+		<size>10000</size>
+		<ram>512</ram>
+		<mips>1000</mips>
+		<bw>1000</bw>
+		<pesNumber>1</pesNumber>
+		<vmm>Xen</vmm>
+		<CloudletScheduler>SubTaskSchedulerCloudletLevel</CloudletScheduler>
+	</VM>
+</Customer>

@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<Customer>
+	<VM ref="0">
+		<size>10000</size>
+		<ram>512</ram>
+		<mips>1000</mips>
+		<bw>1000</bw>
+		<pesNumber>1</pesNumber>
+		<vmm>Xen</vmm>
+		<CloudletScheduler>SubtaskScheduler</CloudletScheduler>
+	</VM>
+	<VM ref="1">
+		<size>10000</size>
+		<ram>512</ram>
+		<mips>2000</mips>
+		<bw>1000</bw>
+		<pesNumber>1</pesNumber>
+		<vmm>Xen</vmm>
+		<CloudletScheduler>SubtaskScheduler</CloudletScheduler>
+	</VM>
+	<VM ref="2">
+		<size>10000</size>
+		<ram>512</ram>
+		<mips>3000</mips>
+		<bw>1000</bw>
+		<pesNumber>1</pesNumber>
+		<vmm>Xen</vmm>
+		<CloudletScheduler>SubtaskScheduler</CloudletScheduler>
+	</VM>
+	<VM ref="3">
+		<size>10000</size>
+		<ram>512</ram>
+		<mips>4000</mips>
+		<bw>1000</bw>
+		<pesNumber>1</pesNumber>
+		<vmm>Xen</vmm>
+		<CloudletScheduler>SubtaskScheduler</CloudletScheduler>
+	</VM>
+</Customer>
+

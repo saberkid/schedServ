@@ -1,0 +1,41 @@
+<Provider>
+	<Datacenter ref="0">
+		<arch>x86</arch>
+		<os>Linux</os>
+		<vmm>Xen</vmm>
+		<time_zone>8.0</time_zone>
+		<cost>3.0</cost>
+		<costPerMem>0.05</costPerMem>
+		<costPerStorage>0.1</costPerStorage>
+		<costPerBw>0.1</costPerBw>
+		<storageList></storageList>
+		<Host ref="0">
+			<PE>4000</PE>
+			<RamProvisioner>2048</RamProvisioner>
+			<BwProvisioner>10000</BwProvisioner>
+			<storage>1000000</storage>
+			<VmScheduler>VmSchedulerSpaceShared</VmScheduler>
+		</Host>
+		<Host ref="0">
+			<PE>4000</PE>
+			<RamProvisioner>2048</RamProvisioner>
+			<BwProvisioner>10000</BwProvisioner>
+			<storage>1000000</storage>
+			<VmScheduler>VmSchedulerSpaceShared</VmScheduler>
+		</Host>
+		<Host ref="0">
+			<PE>4000</PE>
+			<RamProvisioner>2048</RamProvisioner>
+			<BwProvisioner>10000</BwProvisioner>
+			<storage>1000000</storage>
+			<VmScheduler>VmSchedulerSpaceShared</VmScheduler>
+		</Host>
+		<Host ref="0">
+			<PE>4000</PE>
+			<RamProvisioner>2048</RamProvisioner>
+			<BwProvisioner>10000</BwProvisioner>
+			<storage>1000000</storage>
+			<VmScheduler>VmSchedulerSpaceShared</VmScheduler>
+		</Host>
+	</Datacenter>
+</Provider>
