@@ -45,11 +45,7 @@ public class Json2Xml{
 
 	}
 	
-//	public static Document xml2doc(String xmlFilePath) throws Exception{
-//		File file=new File(xmlFilePath);
-//		return (new SAXBuilder()).build(file);
-//	}
-	
+
 	public static void writeFile(String outPath, String sets) throws IOException{
 		FileWriter fw=new FileWriter(outPath);
 		fw.write(sets);
@@ -77,24 +73,7 @@ public class Json2Xml{
 
 		return "["+sb.toString()+"]";
 	}
-	/*public static void main(String[] args){
-		try{
-			String path="test.json";
-			String outPath="test_out.xml";
-			FileWriter writer=new FileWriter(outPath);
-			String jsonStr=ReadFile(path);
-			System.out.printf(jsonStr);
-			String res=json2xml(jsonStr);
-			//System.out.println(res);
-			writeFile(outPath, res);
-				
-		} catch(Exception e){
-			e.printStackTrace();
-		}
-		
-		
-	}*/
-	
+
 }
 
 

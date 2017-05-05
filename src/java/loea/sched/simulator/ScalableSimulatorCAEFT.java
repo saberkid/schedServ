@@ -25,90 +25,6 @@ import org.cloudbus.cloudsim.core.CloudSim;
 
 public class ScalableSimulatorCAEFT {
 
-/*	public static void main(String[] args) {
-
-		String providerFile = "";
-		String tasksFile = "";
-		String VMsFile = "";
-
-		Options options = new Options();
-
-		{
-			options.addOption("h", "help", false, "show help.");
-			Option option;
-			option = Option.builder("p").longOpt("provider").required().hasArg()
-					.desc("specifies the file defining the cloud provider.").build();
-			options.addOption(option);
-			option = Option.builder("t").longOpt("task").required().hasArg()
-					.desc("specifies the file describing the tasks.").build();
-			options.addOption(option);
-			option = Option.builder("v").longOpt("vm").required().hasArg()
-					.desc("specifies the file describing the virtual machines.").build();
-			options.addOption(option);
-		}
-
-		try {
-			CommandLineParser parser = new DefaultParser();
-			CommandLine cmd = parser.parse(options, args);
-			if (cmd.hasOption("h"))
-				help(options);
-			providerFile = cmd.getOptionValue("p");
-			tasksFile = cmd.getOptionValue("t");
-			VMsFile = cmd.getOptionValue("v");
-
-		} catch (ParseException e) {
-			help(options);
-		}
-
-		Log.printLine("Starting Scalable Simulator...");
-
-		try {
-			// Initialize the CloudSim package. It should be called
-			// before creating any entities.
-			int num_user = 1; // number of cloud users
-			Calendar calendar = Calendar.getInstance();
-			boolean trace_flag = true; // mean trace events
-
-			// Initialize the CloudSim library
-			CloudSim.init(num_user, calendar, trace_flag);
-
-			@SuppressWarnings("unused")
-			List<Datacenter> centerList = ProviderImporter.XMLImporter(providerFile);
-
-			TaskBrokerCAEFT broker = new TaskBrokerCAEFT("TaskBroker");
-
-			// VM XMLImporter
-			List<Vm> vmList = VMImporter.XMLImporter(VMsFile, broker.getId());
-			// submit VM list to broker
-			broker.submitVmList(vmList);
-
-			List<Task> taskList = Task.XMLImporter(tasksFile);
-			for (Task t : taskList) {
-				for (Subtask st : t) {
-					st.setUserId(broker.getId());
-				}
-			}
-			broker.submitTaskList(taskList);
-
-			Date start = new Date();
-			// Starts the simulation
-			CloudSim.startSimulation();
-
-			CloudSim.stopSimulation();
-			Date end = new Date();
-
-			// Final step: Print results when simulation is over
-			List<Cloudlet> newList = broker.getCloudletReceivedList();
-			Simulator.printCloudletList(newList);
-
-			Log.printLine("Scalable Simulator finished!");
-			Log.printLine("Time elapsed: "+((end.getTime()-start.getTime())/1000.0));
-		} catch (Exception e) {
-			e.printStackTrace();
-			Log.printLine("Unwanted errors happen");
-		}
-
-	}*/
 	public static HashMap<String, String> runScheduler(String providerFile , String tasksFile, String VMsFile){
         providerFile = "C:\\xampp\\tomcat\\webapps\\schedServ\\web\\WEB-INF\\prov_h4.xml";
         tasksFile = "C:\\xampp\\tomcat\\webapps\\schedServ\\web\\WEB-INF\\task_s01_t1_st1000_e10000.xml";
@@ -155,8 +71,10 @@ public class ScalableSimulatorCAEFT {
 			// Final step: Print results when simulation is over
 			List<Cloudlet> newList = broker.getCloudletReceivedList();
 			Simulator.printCloudletList(newList);
-            simuResult.put("success","true");
-            simuResult.put("time", String.valueOf((end.getTime()-start.getTime())/1000.0));
+            simuResult.put("success","True");
+			simuResult.put("vioType","NA");
+			simuResult.put("timeVio","NA");
+            simuResult.put("comment", "Success case");
 			Log.printLine("Scalable Simulator finished!");
 			Log.printLine("Time elapsed: "+((end.getTime()-start.getTime())/1000.0));
 		} catch (Exception e) {

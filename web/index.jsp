@@ -65,9 +65,10 @@
         <div class="area col-md-6 col-sm-12">
           <h1 id="tasks">TM</h1>
           <button id="addTask" onClick="addTask()" type="button" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Task</button>
+          <a></a>
           <form name="demoForm"  id="upForm" enctype="multipart/form-data" method="post">
             <p>Upload File: <input type="file" id="TForm" name="taskfile"></p>
-              <p><button type="button" id="upButton" value="Submit" class="btn btn-default btn-sm">Upload</button></p>
+            <p><button type="button" id="upButton" value="Submit" class="btn btn-default btn-sm">Upload</button></p>
           </form>
           <%--<button id="addTaskFile" onClick="addTask()" type="button" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Upload Task File</button>--%>
         </div>
@@ -129,11 +130,12 @@
       <div class="row">
         <div class="area col-md-6 col-sm-12">
           <h1 id="schedule">Scheduling</h1>
-          <button id="execute" onClick="execute()" type="button" class="btn btn-success">Execute</button>
+          <button id="execute" onClick="execute(0)" type="button" class="btn btn-success">Execute</button>
+          <button id="execute_fal" onClick="execute(1)" type="button" class="btn btn-success">Execute Failure</button>
           <div id="log">
-
           </div>
         </div>
+        <div id="returnList"></div>
       </div>
     </div><!-- /.container -->
 

@@ -283,7 +283,7 @@ function removeHost(i){
   HostNum--;
 }
 
-function execute(){
+function execute(status){
 
   var summary=new Object();
   summary.VMs=new Array();
@@ -358,8 +358,19 @@ function execute(){
         data: json,
         dataType: 'json',
         success: function (data) {
-            console.log("Hey, we got reply form java side, with following data: ");
-            $("#log").html("<p>Success:"+data.success+"</p>");
+            $("#log").html('Simulation finished');
+            if (status === 0){
+                formRes.load(data);
+            }
+            else {
+                var data = {
+                    "success":"Flase",
+                    "vioType":"Timing",
+                    "timeVio":Math.floor((Math.random() * 100) + 1000),
+                    "comment":"Failure case"};
+                formRes.load(data);
+            }
+
 
             // redirecting example..
 
@@ -394,6 +405,7 @@ $(document).ready(function(){
     </div>');
   }
   */
+    window.formRes = new Table_bs($('#returnList'));
 
     $("#upButton").click(function () {
 
@@ -421,4 +433,64 @@ $(document).ready(function(){
             }
         });
     });
+
+
+
+
 });
+
+function Table_bs($box){
+
+    var _init_bit = false;
+    var _box = $box;
+
+    this.init = function(){
+
+        _box.addClass('table-responsive');
+
+        var html = '';
+        html += '<table class="table table-striped " style="text-align: center; ">';
+        html += '<thead style="font-weight: bold;">';
+        html += '</thead>';
+        html += '<tbody>';
+        html += '</tbody>';
+        html += '</table>';
+
+        _box.append($(html));
+        var thead = ["#","Success","Violation Type", "Timing Violation", "Comment"];
+
+        var html_thead = '';
+        html_thead += '<tr>';
+        for(var i=0;i<thead.length;i++){
+            html_thead += '<td>' + thead[i] + '</td>';
+        }
+        html_thead += '</tr>';
+
+        _box.find('thead').append($(html_thead));
+        _init_bit = true;
+    }
+
+    this.load = function(option){
+
+        if(!_init_bit){
+            this.init();
+        }
+
+        // 表身
+        var html_tbody = '';
+
+        var buff = option;
+
+        html_tbody += '<tr>';
+        html_tbody += '<td>' + Date()+'</td>';
+        html_tbody += '<td>' + buff.success + '</td>';
+        html_tbody += '<td>' + buff.vioType + '</td>';
+        html_tbody += '<td>' + buff.timeVio + '</td>';
+        html_tbody += '<td>' + buff.comment + '</td>';
+
+        html_tbody += '</tr>';
+
+        _box.find('tbody').append($(html_tbody));
+    }
+}
+

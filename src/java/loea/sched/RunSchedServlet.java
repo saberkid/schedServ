@@ -48,11 +48,11 @@ public class RunSchedServlet extends HttpServlet {
             e.printStackTrace();
         }*/
         PrintWriter out = response.getWriter();
-        String data = Json2Xml.json2xml(String.valueOf(jb));//"{\"result\":\"success\"}";
-        System.out.println(data);
+        String data = Json2Xml.json2xml(String.valueOf(jb));
+        //System.out.println(data);
         //将数据拼接成JSON格式
         HashMap<String,String> simuResult = ScalableSimulatorCAEFT.runScheduler("prov_h4.xml","task_s01_t1_st1000_e10000.xml","vm_v4.xml");
-        System.out.println(simuResult);
+        //System.out.println(simuResult);
         out.print(new JSONObject(simuResult));
         out.flush();
         out.close();
